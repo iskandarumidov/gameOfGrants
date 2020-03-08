@@ -35,6 +35,13 @@
                                     </mat-form-field>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="cryptoAddress" type = "text" name = "cryptoAddress" ngModel>
+                                    </mat-form-field>
+                                </div>
+                            </div>
 
                             <div class="row">
                                 <div class="col-md-12">
@@ -46,14 +53,14 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Proposal Amount" type="text">
-                                    </mat-form-field>
+                                    <input class="ng-hide" multiple type="file" />
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input class="ng-hide" multiple type="file" />
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">
+                                  <input type="radio" aria-label="Radio button for following text input" name="type" ngModel>Proposal
+                                  </div>
                                 </div>
                             </div>
                             <button mat-raised-button type="submit" class="btn btn-danger pull-right">Submit Proposal</button>
