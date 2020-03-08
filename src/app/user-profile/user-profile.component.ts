@@ -12,6 +12,7 @@ export class UserProfileComponent implements OnInit {
   data: any;
   constructor(private dataService: UtilityService){
     this.data = dataService.getData();
+    
   }
   // data = GlobalConstants.data;
   

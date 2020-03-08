@@ -36,4 +36,7 @@ export class UtilityService{
     getData(){
       return this.data;
     }
+    addCard(cost: string){
+      this.data.
+    }
 }

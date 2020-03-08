@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilityService } from 'app/app.component';
 
 @Component({
   selector: 'app-table-list',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableListComponent implements OnInit {
 
-  constructor() { }
+  data: any;
+  constructor(private dataService: UtilityService) {
+    this.dataService = dataService.getData();
+  }
 
   ngOnInit() {
   }
 
+  onClickSubmit(data){
+    alert(data.emailid);
+
+  }
+
+  
 }
