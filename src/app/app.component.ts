@@ -11,25 +11,6 @@ import Web3 from 'web3';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // public data: {cost: string};
-
-  // public data:() => any = data;
-  // constructor(){
-  //   this.data = data;
-  // }
-
-
-
-
-  // data = GlobalConstants.siteTitle;
-
-  // constructor(private service: Web3Service) {
-  //   service.makeTransaction('0xf6043Aa21f1A960Ad2C6a420147CCA054C3a8506', 5);
-  // }
-
-  // ngOnInit() {
-  //     console.log(this.cost);
-  // }
 }
 
 
@@ -39,15 +20,14 @@ export class UtilityService {
   getData() {
     return this.data;
   }
-  addCard(cost: number, name: string, title: string, researcher: string, donor: string, type: string, description: string) {
+  addCard(cost: number, name: string, title: string, type: string, description: string, cryptoAddress: string) {
     var newS = {
       "cost": cost,
       "name": name,
       "title": title,
-      "researcher": researcher,
-      "donor": donor,
       "type": type,
-      "description": description
+      "description": description,
+      "cryptoAddress": cryptoAddress
     };
     this.data.push(newS);
   }
