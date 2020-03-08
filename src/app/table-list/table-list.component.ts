@@ -17,9 +17,9 @@ export class TableListComponent implements OnInit {
   }
 
   onClickSubmit(data){
-    alert(data.emailid);
-    console.log(data.emailid);
-    this.dataService.addCard(9999);
+    alert(data.cost);
+    console.log(data.cost);
+    this.dataService.addCard(data.cost, "asdf", "asdf", "asdf", "adsf", true);
   }
 
   
