@@ -1,17 +1,16 @@
 <div class="main-content">
   <div class="container-fluid">
+    <mat-form-field>
+      <mat-label>Favorite food</mat-label>
+      <mat-select (selectionChange)="filterProp(selectFieldProp.value);" #selectFieldProp>
+        <mat-option *ngFor="let cardType of cardTypes" [value]="cardType.value">
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
     <div class="row">
-      <input type="text" (change)="filter(selectField.value);" #selectField>
+      <!-- <input style="display:none;" type="text" (change)="filter(selectField.value);" #selectField> -->
 
-      <h4>Basic mat-select</h4>
-      <mat-form-field>
-        <mat-label>Favorite food</mat-label>
-        <mat-select (selectionChange)="filterProp(selectFieldProp.value);" #selectFieldProp>
-          <mat-option *ngFor="let cardType of cardTypes" [value]="cardType.value">
-            {{cardType.viewValue}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
+
 
 
 
@@ -19,7 +18,7 @@
         <div class="card card-profile">
           <div class="card-avatar">
             <a href="javascript:void(0)">
-              <img class="img" src="./assets/img/faces/marc.jpg" />
+              <img class="img" src="./assets/img/mooi.jpg" />
             </a>
           </div>
           <div class="card-body">
@@ -29,6 +28,19 @@
             <h6 class="card-category text-gray">{{prop.researcher}}</h6>
             <h4 class="card-title">{{prop.donor}}</h4>
             <p class="card-description">{{prop.description}}</p>
+
+
+            <div class="border-chain">
+              <div class="circle">Node1</div>
+              <span class="arrow">&#8594;</span>
+            
+              <div class="circle">Node2</div>
+              <span class="arrow">&#8594;</span>
+            
+              <div class="circle">Node3</div>
+            </div>
+
+
             <a href="javascript:void(0)" class="btn btn-danger btn-round">Follow</a>
           </div>
         </div>
