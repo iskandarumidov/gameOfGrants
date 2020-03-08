@@ -8,25 +8,6 @@ import{ GlobalConstants } from './global-constants';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // public data: {cost: string};
-
-  // public data:() => any = data;
-  // constructor(){
-  //   this.data = data;
-  // }
-
-
-
-  
-  // data = GlobalConstants.siteTitle;
-  
-  // constructor() { 
-  //     console.log(GlobalConstants.data[0]);
-  // }
- 
-  // ngOnInit() {
-  //     console.log(this.cost);
-  // }
 }
 
 
@@ -36,15 +17,14 @@ export class UtilityService{
     getData(){
       return this.data;
     }
-    addCard(cost: number, name: string, title: string, researcher: string, donor: string, type: string, description: string){
-      var newS =         {
+    addCard(cost: number, name: string, title: string, type: string, description: string, cryptoAddress: string){
+      var newS = {
         "cost": cost,
         "name": name,
         "title": title,
-        "researcher": researcher,
-        "donor": donor,
         "type": type,
-        "description": description
+        "description": description,
+        "cryptoAddress": cryptoAddress
       };
       this.data.push(newS);
     }

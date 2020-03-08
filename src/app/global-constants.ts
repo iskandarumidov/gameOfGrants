@@ -8,28 +8,25 @@ export class GlobalConstants {
             "cost": 5000,
             "name": "Dr. Who",
             "title": "Parrots",
-            "researcher": "Julio Maldonado",
-            "donor": "Marina Kulmichina",
             "type": "proposal",
-            "description": "lorem ipsum dolor sit amet1"
+            "description": "lorem ipsum dolor sit amet1",
+            "cryptoAddress": "asdfasdfasdfasdf"
         },
         {
             "cost": 5000,
             "name": "Dr. Who2",
             "title": "Parrots",
-            "researcher": "Julio Maldonado",
-            "donor": "Marina Kulmichina",
             "type": "proposal",
-            "description": "lorem ipsum dolor sit amet2"
+            "description": "lorem ipsum dolor sit amet2",
+            "cryptoAddress": "asdfasdfasdfasdf"
         },
         {
             "cost": 5000,
             "name": "Dr. Who3",
             "title": "Parrots",
-            "researcher": "Julio Maldonado",
-            "donor": "Marina Kulmichina",
             "type": "rfp",
-            "description": "lorem ipsum dolor sit amet3"
+            "description": "lorem ipsum dolor sit amet3",
+            "cryptoAddress": "asdfasdfasdfasdf"
         }
     ]
         
