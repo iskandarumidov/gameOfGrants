@@ -1,0 +1,18 @@
+.main-content {
+    /*background: linear-gradient(60deg, #43a047, #48b1bf)*/
+    background: url("../../assets/img/faces/background-bitcoin4.jpg") no-repeat fixed center;
+}
+
+.card-title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#description {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {
+    opacity: 0.95;
+}
