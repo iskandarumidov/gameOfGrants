@@ -36,14 +36,15 @@ export class UtilityService{
     getData(){
       return this.data;
     }
-    addCard(cost: number, name: string, title: string, researcher: string, donor: string, isProposal: boolean){
+    addCard(cost: number, name: string, title: string, researcher: string, donor: string, isProposal: boolean, description: string){
       var newS =         {
         "cost": cost,
         "name": name,
         "title": title,
         "researcher": researcher,
         "donor": donor,
-        "isProposal": isProposal
+        "isProposal": isProposal,
+        "description": description
       };
       this.data.push(newS);
     }

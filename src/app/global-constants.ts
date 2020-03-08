@@ -10,7 +10,8 @@ export class GlobalConstants {
             "title": "Parrots",
             "researcher": "Julio Maldonado",
             "donor": "Marina Kulmichina",
-            "isProposal": true
+            "isProposal": true,
+            "description": "lorem ipsum dolor sit amet"
         },
         {
             "cost": 5000,
@@ -18,7 +19,8 @@ export class GlobalConstants {
             "title": "Parrots",
             "researcher": "Julio Maldonado",
             "donor": "Marina Kulmichina",
-            "isProposal": true
+            "isProposal": true,
+            "description": "lorem ipsum dolor sit amet2"
         },
         {
             "cost": 5000,
@@ -26,7 +28,8 @@ export class GlobalConstants {
             "title": "Parrots",
             "researcher": "Julio Maldonado",
             "donor": "Marina Kulmichina",
-            "isProposal": true
+            "isProposal": true,
+            "description": "lorem ipsum dolor sit amet3"
         }
     ]
         
