@@ -36,7 +36,15 @@ export class UtilityService{
     getData(){
       return this.data;
     }
-    addCard(cost: string){
-      this.data.
+    addCard(cost: number){
+      var newS =         {
+        "cost": cost,
+        "name": "Dr. Who2",
+        "title": "Parrots",
+        "researcher": "Julio Maldonado",
+        "donor": "Marina Kulmichina",
+        "isProposal": true
+      };
+      this.data.push(newS);
     }
 }

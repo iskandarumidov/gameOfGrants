@@ -7,10 +7,10 @@ import { UtilityService } from 'app/app.component';
   styleUrls: ['./table-list.component.css']
 })
 export class TableListComponent implements OnInit {
-
-  data: any;
-  constructor(private dataService: UtilityService) {
-    this.dataService = dataService.getData();
+  private dataService: UtilityService;
+  // data: any;
+  constructor(private dataService2: UtilityService) {
+    this.dataService = dataService2;
   }
 
   ngOnInit() {
@@ -18,7 +18,7 @@ export class TableListComponent implements OnInit {
 
   onClickSubmit(data){
     alert(data.emailid);
-
+    this.dataService.addCard(9999);
   }
 
   
