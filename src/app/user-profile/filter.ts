@@ -15,3 +15,15 @@ export class FilterPipe implements PipeTransform {
         return array.filter(item => item[filterField].toLowerCase().includes(filterValue.toLowerCase()));
     }
 }
+
+
+
+@Pipe({
+  name: 'filterByProp'
+})
+export class FilterPipeProp implements PipeTransform {
+    transform( array: Array<any>, filterField: string, filterValue: string ): Array<any> {
+        if (!array) return [];
+        return array.filter(item => item[filterField].toLowerCase().includes(filterValue.toLowerCase()));
+    }
+}
