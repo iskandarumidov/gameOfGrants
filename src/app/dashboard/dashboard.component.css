@@ -1,6 +1,6 @@
 .main-content {
     /*background: linear-gradient(60deg, #43a047, #48b1bf)*/
-    background: url("../../assets/img/faces/background-bitcoin4.jpg") no-repeat fixed center;
+    background: url("../../assets/img/faces/background-bitcoin4.jpg") repeat fixed center;
 }
 
 .card-title {
