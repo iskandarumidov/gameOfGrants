@@ -1,14 +1,19 @@
 <div class="main-content">
   <div class="container-fluid">
-    <mat-form-field>
-      <mat-label>Favorite food</mat-label>
-      <mat-select (selectionChange)="filterProp(selectFieldProp.value);" #selectFieldProp>
+  <div class="row">
+    <mat-form-field class="selector">
+      <!--<mat-select (selectionChange)="filterProp(selectFieldProp.value);" #selectFieldProp>-->
+
+      <mat-select (selectionChange)="filterProp($event.value);">
         <mat-option *ngFor="let cardType of cardTypes" [value]="cardType.value">
+          {{cardType.value}}
         </mat-option>
       </mat-select>
     </mat-form-field>
+  </div>
+
     <div class="row">
-      <!-- <input style="display:none;" type="text" (change)="filter(selectField.value);" #selectField> -->
+      <input style="display:none;" type="text" (change)="filter(selectField.value);" #selectField>
 
 
 
