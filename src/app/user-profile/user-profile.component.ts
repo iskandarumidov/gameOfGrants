@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import{ GlobalConstants } from '../global-constants';
+import { UtilityService } from 'app/app.component';
 
 @Component({
   selector: 'app-user-profile',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor() { }
+  data: any;
+  constructor(private dataService: UtilityService){
+    this.data = dataService.getData();
+  }
+  // data = GlobalConstants.data;
+  
 
   ngOnInit() {
   }
